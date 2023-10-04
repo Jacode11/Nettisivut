@@ -174,7 +174,7 @@ header nav {
 
 /* newsletter-tyylit */
 #newsletter1 {
-    background-image: url(/img/dino1.jpg);
+    background-image: url(../img/dino1.jpg);
     
     background-size: cover;
     background-position: center center;
