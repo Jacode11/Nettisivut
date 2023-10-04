@@ -1,0 +1,1024 @@
+* {
+    box-sizing: border-box; /* sisällyttää paddingit/reunaviivat koko leveyteen */
+}
+
+body {
+    font-size: 15pix/1.5;
+    font-family: "Lato", sans-serif;
+    padding: 0; /* tyhjä tila elementtien ja sisällön välillä */
+    margin: 0; /* tyhjä tila elementtien ulkopuolella */
+    background-color:#C8C8FF;
+}
+
+/*.clearfix {
+    clear: both;
+}
+
+/*ul {
+    margin: 0;
+    padding: 0;
+}*/
+
+.highlight {
+    color: #00CDFF;
+    font-weight: bold; /* vähän lihavampi */
+}
+
+/* Header-tyylit */
+
+header {
+    background-color: #464646;
+    color: #fff;
+    padding: 5px 0; /* ylä ja ala 30px,oikea vasen 0 */
+    min-height: 50px; /* minimi korkeus */
+    border-bottom: #00CDFF 3px solid;/* reunaviiva alas */ /* 3px paksu ja kiinteä */
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+#branding {
+    margin-left: 40px;
+}
+
+#branding img { /* #=id */
+     display: block; /* kuva näytetään block elementtinä */
+     float: left; /* kelluu vasemmalla */
+     padding: 5px 5px 10px 5px;
+     margin: 0px 0px 0px 0px; /* ylä,oikea,ala,vasen */
+     height:70px;
+     border-radius: 100px;
+     -ms-transform: rotate(0deg); /* IE9 */
+     -webkit-transform: rotate(0deg); /* Chrome,Safari,Opera */ /* kääntää kuvaa */
+     transform:rotate(0deg) ; /* Firefox */    
+}
+
+#branding h6 {
+    margin: 15px 0 0 0;
+    font-size: 30px;   
+    padding: 4px; 
+    text-decoration: underline;   
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none; /* alareuna pois */
+    text-transform: uppercase; /* isot kirjaimet */
+    font-size: 18px;
+}
+
+header li {
+    display: inline; /* peräkkäin */
+    padding: 0 20px; /* ylös ja alas 0,vasen oikea 20px */
+}
+
+header li:hover {
+    background: #00CDFF;
+}
+
+header #branding {
+    float: left; /* kelluu vasemmalla */
+}
+
+.icon {
+    margin: 0 500px 0 0;
+}
+
+.fa-brands {
+    /*margin: 30px 0 0 0;*/
+    padding: 0 0 0 30px;
+    cursor: pointer;
+}
+
+.icon i:hover {
+    transform: translateY(-5px);
+}
+
+header nav {
+   /* float: right; /* kelluu oikealla */
+    width: 400px;
+    /*padding: 0 0 0 0;*/
+    /*justify-content: center;
+    align-items: center;*/
+}
+
+#menu-icon {
+    float: right;
+    width: 50px;
+    height: 20px;
+    margin-right: 40px; 
+    cursor: pointer; 
+    display: none; 
+}
+
+#menu-icon i:hover {
+    transform: translateY(-5px);
+}
+
+#menu-icon .fa-solid {
+    font-size: 22px;
+    float: right;
+    padding-left: 0px;
+}
+
+/* showcase-tyylit */
+
+#showcase {
+    width: 100%;
+    /*max-height: 500px;*/
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    /*max-height: 500px;*/
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*max-height: 500px;*/
+    height: 100px;
+    object-fit: cover;
+}
+
+.video-container h1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    /*padding-bottom: 20%;*/
+    width: 100%;
+    /*max-height: 500px;*/
+    height: 100px;
+    background: #C8C8FF;
+    font-size: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 75%;
+    mix-blend-mode: screen;
+    
+}
+    
+
+/* newsletter-tyylit */
+#newsletter1 {
+    background-image: url(/html_css/img/dino1.jpg);
+    
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*position: relative;*/
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+    padding-right: 100px;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;  
+}
+
+.text h1 {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0px;
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    /*float: right;*/
+}
+
+#newsletter {
+    background-color: #000;
+    color: #f4f4f4;
+    padding: 15px 0;
+}
+
+#newsletter h5 {
+    float: left;
+    width: 50%; 
+    font-size: 1.1em;            
+}
+
+#newsletter form {
+    float: right;
+    width: 50%;
+}
+
+#newsletter input[type="email"] {
+    width: 60%;
+    padding: 2px;
+    height: 25px;
+    margin-top: 25px; /* ylä marginaali */    
+    font-size: 1.1em;
+}
+
+#newsletter button {
+    width: 35%;
+    min-width: 100px;
+    background-color: #00CDFF;
+    height: 25px;
+    border: 0;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* main-tyylit */
+
+#main {
+   /* background-color: #C8C8FF;*/
+   background: url("../img/kiekko.png"); 
+   display: flex;
+   background-size: cover;
+   background-position: center center;
+   
+}
+
+.container { /* .= class */
+    width: 90%; /* leveys */       
+    max-width: 1200pix;
+    
+    margin: auto; /* sisältö keskellä */
+    overflow: hidden;  /* sisältö ei mene yli rajojen  */
+}
+
+#main-col {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    float: left;
+    width: 65%;
+    background-color: #C8C8FF;
+    line-height: 1.2em; /* rivien välit isommaksi */
+    padding: 10px;
+}
+
+#main-col h1 {
+    font-size: 1.5em; /* puoltoista kertaa isompi */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.dark {
+    background-color: #00CDFF;
+    padding: 15px;
+    color: #000;
+    height: 300px;
+}
+
+.dark1 {
+    background-color: #464646;
+    padding: 15px;
+    color: #000;
+    height: 490px;
+}
+
+.message input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    padding: 4px;
+    font-size: 1.1em;
+}
+
+.message textarea {
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    height: 10em; /* 10 riviä */
+    padding: 4px;
+    font-size: 1.1em;
+}
+
+.message button {
+    width: 100%;
+    height: 40px;
+    background-color: #00CDFF;
+    border: 0;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+#sidebar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 30%;
+    height: 530px;
+    background-color: #C8C8FF;
+    line-height: 1.4em;
+    padding: 15px;
+}
+
+#sidebar1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: right;
+    width: 30%;
+    height: 650px;
+    background-color: #C8C8FF;
+    line-height: 1.4em;
+    padding: 15px;
+}
+
+#sidebar1 h3 {
+    margin-top: 0;
+}
+.Koodaus {
+    background-color: #00CDFF;
+    padding: 60px;
+    padding-top: 30px;
+    height: 600px;
+}
+
+#sidebar h3 {
+    font-size: 1.3em;
+}
+
+#sidebar1 video {
+   /* max-width: 100%; */ /* niin leveä kuin mahdollista */
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+}
+
+/* projects */
+
+#projects {
+    padding: 0;
+}
+
+#projects li {
+    list-style-type: none; /* oletus= cirkle */
+    padding: 10px; /* tyhjää tilaa reunoille */
+    border: #000 2px solid;
+    margin-bottom: 6px; /* väliin tilaa */
+    background-color: #464646;
+
+}
+
+.box1 {
+    height: 150px;
+}
+
+.box1 h3 {
+    margin: 10px;
+    margin-left: 0;
+}
+
+.box2 {
+    height: 150px;
+}
+
+.box2 h3 {
+    margin: 10px;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.box3 {
+    height: 300px;
+    margin-bottom: 0;
+}
+
+#canvas1 {
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 350px;
+    height: 296px;
+}
+
+/* footer */
+
+footer {
+    height: 70px;
+    margin: 0;
+    /*padding: 10px;*/
+    color: #000;
+    background-color: #464646;
+    text-align: center;
+    /*border-top: #00CDFF 3px solid;*/
+}
+
+footer p {
+    margin: 0;
+    padding-top: 10px;
+}
+/* boxes-tyylit */
+
+#boxes {
+    margin: 0px 0;
+    background-color:#464646;
+    max-height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+
+}
+/*.container2 {
+    background-color: #464646;
+}*/
+
+#boxes #box {
+    width: 33%;
+    height: 35px;
+    float: left;
+    text-align: center;
+    padding: 5px;
+}
+
+#boxes #box img {
+    height: 30px; /* kaikille kuville sama korkeus,leveys tulee automaattisesti */
+    margin: 5px 0; /* yläreunaan tilaa */   
+    background-color: #00CDFF;
+}
+
+/*#boxes #box h5 {
+    margin: 0;
+    color: #C8C8FF;
+}*/
+
+
+/* koskee pieniä näyttöjä */
+@media only screen and (max-width: 1329px){
+    header {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+    #branding {
+        width: 300px;
+    }
+    #branding h6 {
+        width: 300px;
+    }
+    #branding .optimus {
+        height: 50px;
+    }
+    .icon {
+        width: 200px;
+        margin-right: 300px;
+    }
+    #sidebar1 video {
+         width: 100%;
+         max-height: 250px;
+     }
+}
+
+@media only screen and (max-width: 1204px){
+    
+    .icon {
+        width: 200px;
+        margin-right: 300px;
+    }
+}
+@media only screen and (max-width: 1186px){
+    
+    .icon {
+        width: 200px;
+        margin-right: 200px;
+    }
+    #sidebar1 video {
+        width: 100%;
+        max-height: 250px;
+    }
+    .Koodaus {
+        padding: 50px;
+        padding-top: 30px;
+    }
+
+}
+@media only screen and (max-width: 1086px){
+    
+    .icon {
+        width: 200px;
+        margin-right: 150px;
+    }
+    .Koodaus {
+        padding: 40px;
+        padding-top: 30px;
+    }
+}
+@media only screen and (max-width: 1036px){
+    
+    .icon {
+        width: 200px;
+        margin-right: 100px;
+    }
+    #sidebar1 {
+        height: 700px;
+    }
+    .Koodaus {
+        height: 650px;
+        padding: 40px;
+        padding-top: 30px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    header {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+    #branding {
+        width: 300px;
+    }
+    #branding h6 {
+        width: 300px;
+    }
+    .icon {
+        width: 200px;
+        margin-right: 100px;
+    }
+    #newsletter1 {
+        width: 100%;
+        padding: 0;
+    }
+    .text {
+        padding-right: 10px;
+    }
+    .text h1 {
+        font-size: 40px;
+    }
+}
+@media only screen and (max-width: 986px){
+    
+    .icon {
+        width: 200px;
+        margin-right: 50px;
+    }
+    #newsletter1 {
+        width: 100%;
+        padding: 0;
+    }
+    .text {
+        padding-right: 10px;
+    }
+    .text h1 {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width: 954px){
+    .Koodaus {
+        padding: 30px;
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width: 936px){
+    .icon {
+        width: 150px;
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 906px){
+    #branding {
+        width: 250px;
+    }
+    #branding h6 {
+        width: 250px;
+    }
+    #branding .optimus {
+        height: 40px;
+    }
+    #branding .terminaattori {
+        height: 40px;
+    }
+    .icon {
+        width: 120px;
+        margin-right: 20px;
+    }
+    .fa-brands {
+        padding-left: 15px;
+        font-size: 15px;
+    }
+    .Koodaus {
+        padding: 10px;
+        padding-top: 20px;
+    }
+}
+@media only screen and (max-width: 783px){
+    #branding {
+        width: 220px;
+    }
+    #branding h6 {
+        width: 220px;
+        font-size: 25px;
+    }
+    .icon {
+        width: 120px;
+        margin-right: 20px;
+    }
+    .fa-brands {
+        padding-left: 15px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+    #branding {
+        width: 200px;
+        margin-left: 20px;
+    }
+    #branding img {
+        height: 40px;
+    }
+    #branding h6 {
+        width: 200px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .icon {
+        width: 100px;
+        margin-right: 20px;
+        
+    }
+    .fa-brands {
+        padding-left: 10px;
+        font-size: 10px;
+    }
+    
+    #menu-icon {
+        display: block;
+    }
+    .navlist {
+        position: absolute;
+        top: 10%;
+        right: -100%;
+        width: 200px;
+        height: 20vh;
+        background: #464646;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a {
+        display: block;
+        margin: 10px 0;
+        margin-left: 0;
+    }
+    .navlist.open {
+        right: 0;
+    }
+    #newsletter1 {
+        width: 100%;
+        padding: 0;
+    }
+    .text {
+        padding-right: 10px;
+    }
+    .text h1 {
+        font-size: 30px;
+    }
+    #newsletter {
+        padding: 20px  0;
+    }
+
+    #newsletter h5 {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #newsletter form {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #newsletter input[type="email"], .message input, .message textarea, #newsletter button, .message button {
+        width: 100%;
+        padding: 4px;
+        height: 40px;
+    }
+
+    #boxes {
+        margin-top: 0px;
+        width: 100px;
+        height: 30px;
+        margin-left: 350px;
+    
+    }
+    .container2 {
+        width: 100px;
+        height: 30px;
+        
+    }
+    #boxes #box {
+        margin-top: 0px;
+        
+        padding: 0px;
+        height: 20px;
+        
+    }
+    #boxes #box img {
+        height: 20px;
+    }
+    #sidebar, #main-col {
+        width: 100%;
+    }
+    .box1 {
+        height: 170px;
+    }
+    
+    .box1 h3 {
+        margin: 10px;
+        margin-left: 0;
+    }
+    
+    .box2 {
+        height: 170px;
+    }
+    
+    .box2 h3 {
+        margin: 10px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    
+    .box3 {
+        height: 300px;
+        margin-bottom: 0;
+    }
+    
+    #canvas1 {
+        border: 2px solid #000;
+        width: 350px;
+        height: 296px;
+    }
+    .video-container {
+        width: 100%;
+        height: 100px;
+    }
+    #sidebar1 {
+        width: 100%;
+        height: 500px;
+    }
+    .Koodaus {
+        height: 450px;
+    }
+
+    footer {
+        clear: both;
+        width: 100%;
+        height: 60px;
+    }
+
+}
+@media only screen and (max-width: 642px) {
+    header {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+    #branding {
+        width: 150px;
+        margin-left: 20px;
+    }
+    #branding img {
+        height: 40px;
+    }
+    #branding h6 {
+        width: 150px;
+        font-size: 18px;
+    }
+    #branding .optimus {
+        height: 20px;
+        padding-bottom: 5px;
+    }
+    #branding .terminaattori {
+        height: 20px;
+        padding-bottom: 5px;
+    }
+    .icon {
+        width: 100px;
+        margin-right: 20px;
+    }
+    .fa-brands {
+        padding-left: 10px;
+        font-size: 10px;
+    }
+    #boxes {
+        margin-left: 250px;
+    }
+}
+@media only screen and (max-width: 592px){
+    header nav {
+        width: 100px;
+    }
+    #showcase h1 {
+        font-size: 99px;
+    }
+    #boxes {
+        margin-left: 200px;
+    }
+}
+@media only screen and (max-width: 450px){
+    #branding h6 {
+        width: 130px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    #showcase h1 {
+        font-size: 80px;
+    }
+    #boxes {
+        margin-left: 150px;
+    }
+    #main-col {
+        height: 800px;
+    }
+    #sidebar {
+        height: 400px;
+    }
+    .dark1 {
+        height: 370px;
+    }
+    .dark {
+        height: 425px;
+    }
+    #newsletter {
+        height: 200px;
+    }
+    .container h5 {
+        margin-bottom: 0;
+    }
+    #newsletter input[type="email"] {
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 400px) {
+    header {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+    }
+    #branding {
+        width: 130px;
+        margin-left: 10px;
+    }
+    #branding img {
+        height: 40px;
+    }
+    #branding h6 {
+        width: 130px;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .icon {
+        width: 100px;
+        margin-right: 1px;
+        display: block;
+    }
+    .fa-brands {
+        padding-left: 10px;
+        font-size: 10px;
+    }
+    header nav {
+        width: 50px;
+    }
+    .navlist {
+        height: 30vh;
+        top: 20%;
+    }
+    #menu-icon {
+        display: block;
+    }
+    #showcase {
+        width: 100%;
+        height: 80px;
+    }
+    .video-container {
+        width: 100%;
+        height: 80px;
+    }
+    #showcase video {
+        width: 100%;
+        height: 80px;
+    }
+    #showcase h1 {
+        font-size: 77px;
+    }
+    #newsletter1 {
+        width: 100%;
+        padding: 0;
+    }
+    .text {
+        padding-right: 10px;
+    }
+    .text h1 {
+        font-size: 20px;
+    }
+    #newsletter {
+        padding: 20px  0;
+    }
+
+    #newsletter h5 {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #newsletter form {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #newsletter input[type="email"], .message input, .message textarea, #newsletter button, .message button {
+        width: 100%;
+        padding: 4px;
+        height: 40px;
+    }
+
+    #boxes {
+        margin-top: 0px;
+        width: 100px;
+        height: 30px;
+        margin-left: 150px;
+    
+    }
+    .container2 {
+        width: 100px;
+        height: 30px;
+        
+    }
+    #boxes #box {
+        margin-top: 0px;
+        
+        padding: 0px;
+        height: 20px;
+        
+    }
+    #boxes #box img {
+        height: 20px;
+    }
+    #sidebar, #main-col {
+        width: 100%;
+    }
+    .box1 {
+        height: 170px;
+    }
+    
+    .box1 h3 {
+        margin: 10px;
+        margin-left: 0;
+    }
+    
+    .box2 {
+        height: 170px;
+    }
+    
+    .box2 h3 {
+        margin: 10px;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+    
+    .box3 {
+        height: 300px;
+        margin-bottom: 0;
+    }
+    
+    #canvas1 {
+        border: 2px solid #000;
+        width: 350px;
+        height: 296px;
+    }
+    
+
+    .video-container {
+        width: 100%;
+        height: 100px;
+    }
+
+    footer {
+        clear: both;
+        width: 100%;
+        height: 60px;
+    }
+
+}

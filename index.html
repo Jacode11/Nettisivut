@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harjoitus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="box">
+    <span class="borderline"></span>
+    <div class="form">
+        <h2>Sign in</h2>
+        <div class="inbutBox">
+            <input type="password" id="username" required>
+            <span>Username</span>
+             <i></i>
+        </div>
+        <div class="inbutBox">
+            <input type="password" id="password" required>
+            <span>Password</span>
+             <i></i>
+        </div>
+        <div class="links">
+            <a href="#">Forgot Password</a>
+            <a href="#">Signup</a>
+        </div>
+        <button class="inbutBox" onclick="func()">
+            <input type="submit" value="Login">
+        </button>
+    </div>
+
+  </div>
+<script>
+    function func(){
+      var email = document.getElementById("username").value;
+      var pass = document.getElementById("password").value;
+      if (email == "jyrki" && pass == "12345"){
+        window.location.assign("koti.html")
+      }
+    }
+
+</script>     
+</body>
+</html>
