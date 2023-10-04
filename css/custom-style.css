@@ -684,6 +684,7 @@ footer p {
     }
     .navlist.open {
         right: 0;
+        height: 250px;
     }
     #newsletter1 {
         width: 100%;
