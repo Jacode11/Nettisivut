@@ -174,7 +174,7 @@ header nav {
 
 /* newsletter-tyylit */
 #newsletter1 {
-    background-image: url(/html_css/img/dino1.jpg);
+    background-image: url(/img/dino1.jpg);
     
     background-size: cover;
     background-position: center center;
@@ -666,7 +666,7 @@ footer p {
     }
     .navlist {
         position: absolute;
-        top: 10%;
+        top: 20%;
         right: -100%;
         width: 200px;
         height: 20vh;
